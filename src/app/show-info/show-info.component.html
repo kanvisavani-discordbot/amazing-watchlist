@@ -2,7 +2,7 @@
   <mat-card-header>
     <mat-card-title>{{show.name}}</mat-card-title>
     <mat-card-subtitle>
-      Genres:<span *ngFor="let genre of show.genres">{{genre}}</span>
+      Genres: <span *ngFor="let genre of show.genres">{{genre}} </span>
     </mat-card-subtitle>
   </mat-card-header>
   <img mat-card-image src="{{show.image}}">
@@ -10,7 +10,7 @@
     <h5>Status: {{show.status | titlecase}}</h5>
     <p>{{show.summary}}</p>
   </mat-card-content>
-  <mat-card-actions>
-    <button mat-flat-button color="primary">Details</button>
+  <mat-card-actions align="end">
+    <button mat-flat-button color="primary" routerLink="/show/{{show.id}}">Details</button>
   </mat-card-actions>
 </mat-card>

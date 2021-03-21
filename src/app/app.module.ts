@@ -18,6 +18,7 @@ import { MatButtonModule} from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MatTableModule } from '@angular/material/table';
     SearchResultsComponent,
     ShowInfoComponent,
     ShowDetailsComponent,
-    WatchlistComponent
+    WatchlistComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
