@@ -11,9 +11,9 @@ export class Show {
     this.id = showInfo.id;
     this.language = showInfo.language;
     this.name = showInfo.name;
-    this.genres = showInfo.generes;
+    this.genres = showInfo.genres;
     this.summary = showInfo.summary;
     this.status = showInfo.status;
-    this.image = showInfo.image;
+    this.image = (showInfo.image) ? showInfo.image.medium : null;
   }
 }
